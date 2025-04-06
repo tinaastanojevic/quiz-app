@@ -36,7 +36,7 @@ function Question() {
 
     useEffect(() => {
         const getQuestions = async () => {
-            const data = await fetchQuestions(2, params.category);
+            const data = await fetchQuestions(10, params.category);
             if (!data || !Array.isArray(data)) {
                 console.error("Invalid API response:", data);
                 setListOfQuestions([]);
