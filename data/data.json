@@ -1,0 +1,971 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "text": "Koja je najveća planeta u našem solarnom sistemu?",
+      "options": [
+        "Mars",
+        "Jupiter",
+        "Zemlja",
+        "Saturn"
+      ],
+      "correct_answer": "Jupiter",
+      "category": "Astronomija"
+    },
+    {
+      "id": "2",
+      "text": "Koja planeta je poznata kao crvena planeta?",
+      "options": [
+        "Mars",
+        "Venus",
+        "Jupiter",
+        "Saturn"
+      ],
+      "correct_answer": "Mars",
+      "category": "Astronomija"
+    },
+    {
+      "id": "3",
+      "text": "Koja planeta je najbliža Suncu?",
+      "options": [
+        "Venus",
+        "Merkur",
+        "Mars",
+        "Jupiter"
+      ],
+      "correct_answer": "Merkur",
+      "category": "Astronomija"
+    },
+    {
+      "id": "4",
+      "text": "Koja je najveća zvezda u našem galaktičkom susedstvu?",
+      "options": [
+        "Betelgeuse",
+        "Sirius",
+        "Polaris",
+        "Proxima Centauri"
+      ],
+      "correct_answer": "Betelgeuse",
+      "category": "Astronomija"
+    },
+    {
+      "id": "5",
+      "text": "Ko je autor 'Romea i Julije'?",
+      "options": [
+        "William Shakespeare",
+        "Charles Dickens",
+        "Jane Austen",
+        "Mark Twain"
+      ],
+      "correct_answer": "William Shakespeare",
+      "category": "Književnost"
+    },
+    {
+      "id": "6",
+      "text": "Ko je napisao 'Mobi Dika'?",
+      "options": [
+        "Herman Melville",
+        "Ernest Hemingway",
+        "Mark Twain",
+        "Charles Dickens"
+      ],
+      "correct_answer": "Herman Melville",
+      "category": "Književnost"
+    },
+    {
+      "id": "7",
+      "text": "Ko je autor 'Sto godina samoće'?",
+      "options": [
+        "Gabriel García Márquez",
+        "Mario Vargas Llosa",
+        "Isabel Allende",
+        "Jorge Luis Borges"
+      ],
+      "correct_answer": "Gabriel García Márquez",
+      "category": "Književnost"
+    },
+    {
+      "id": "8",
+      "text": "Ko je napisao 'Ubiti pticu rugalicu'?",
+      "options": [
+        "Harper Lee",
+        "F. Scott Fitzgerald",
+        "George Orwell",
+        "John Steinbeck"
+      ],
+      "correct_answer": "Harper Lee",
+      "category": "Književnost"
+    },
+    {
+      "id": "9",
+      "text": "Koji je glavni grad Francuske?",
+      "options": [
+        "Berlin",
+        "Madrid",
+        "Pariz",
+        "Brisel"
+      ],
+      "correct_answer": "Pariz",
+      "category": "Geografija"
+    },
+    {
+      "id": "10",
+      "text": "Koji je glavni grad Španije?",
+      "options": [
+        "Madrid",
+        "Barcelona",
+        "Valencia",
+        "Sevilla"
+      ],
+      "correct_answer": "Madrid",
+      "category": "Geografija"
+    },
+    {
+      "id": "11",
+      "text": "Koja je najduža reka na svetu?",
+      "options": [
+        "Amazon",
+        "Nil",
+        "Misisipi",
+        "Yangtze"
+      ],
+      "correct_answer": "Amazon",
+      "category": "Geografija"
+    },
+    {
+      "id": "12",
+      "text": "Koja je najveća zemlja po površini?",
+      "options": [
+        "Sjedinjene Američke Države",
+        "Kanada",
+        "Rusija",
+        "Kina"
+      ],
+      "correct_answer": "Rusija",
+      "category": "Geografija"
+    },
+    {
+      "id": "13",
+      "text": "Koja je hemijska formula za vodu?",
+      "options": [
+        "H2O",
+        "CO2",
+        "O2",
+        "H2O2"
+      ],
+      "correct_answer": "H2O",
+      "category": "Hemija"
+    },
+    {
+      "id": "14",
+      "text": "Koja je hemijska formula za ugljen-dioksid?",
+      "options": [
+        "CO2",
+        "O2",
+        "H2O",
+        "H2CO3"
+      ],
+      "correct_answer": "CO2",
+      "category": "Hemija"
+    },
+    {
+      "id": "15",
+      "text": "Koji element je osnovni sastojak u vodi?",
+      "options": [
+        "Kiseonik",
+        "Vodonik",
+        "Azot",
+        "Helijum"
+      ],
+      "correct_answer": "Vodonik",
+      "category": "Hemija"
+    },
+    {
+      "id": "16",
+      "text": "Koji element je osnovni sastojak svih organskih materija?",
+      "options": [
+        "Cikloni",
+        "Kiseonik",
+        "Ugljenik",
+        "Vodonik"
+      ],
+      "correct_answer": "Ugljenik",
+      "category": "Hemija"
+    },
+    {
+      "id": "17",
+      "text": "Koja je osnovna jedinica za masu u SI sistemu?",
+      "options": [
+        "Kilogram",
+        "Gram",
+        "Ton",
+        "Mikrogram"
+      ],
+      "correct_answer": "Kilogram",
+      "category": "Fizika"
+    },
+    {
+      "id": "18",
+      "text": "Koja je osnovna jedinica za temperaturu u SI sistemu?",
+      "options": [
+        "Kelvin",
+        "Celsius",
+        "Fahrenheit",
+        "Rankine"
+      ],
+      "correct_answer": "Kelvin",
+      "category": "Fizika"
+    },
+    {
+      "id": "19",
+      "text": "Koji je osnovni zakon termodinamike?",
+      "options": [
+        "Zakon očuvanja energije",
+        "Zakon gravitacije",
+        "Zakon inercije",
+        "Zakon zakona očuvanja mase"
+      ],
+      "correct_answer": "Zakon očuvanja energije",
+      "category": "Fizika"
+    },
+    {
+      "id": "20",
+      "text": "Koji je najbrži zver na svetu?",
+      "options": [
+        "Gepard",
+        "Lav",
+        "Tigar",
+        "Leopard"
+      ],
+      "correct_answer": "Gepard",
+      "category": "Biologija"
+    },
+    {
+      "id": "21",
+      "text": "Ko je autor romana 'Ponos i predrasude'?",
+      "options": [
+        "Jane Austen",
+        "Charlotte Brontë",
+        "Emily Brontë",
+        "Louisa May Alcott"
+      ],
+      "correct_answer": "Jane Austen",
+      "category": "Književnost"
+    },
+    {
+      "id": "22",
+      "text": "Koji je najpoznatiji roman Marka Tvena?",
+      "options": [
+        "Huckleberry Finn",
+        "Tom Sojer",
+        "Prince and the Pauper",
+        "The Adventures of Huckleberry Finn"
+      ],
+      "correct_answer": "Tom Sojer",
+      "category": "Književnost"
+    },
+    {
+      "id": "23",
+      "text": "Koji je najduži planinski lanac na svetu?",
+      "options": [
+        "Ande",
+        "Himalaji",
+        "Alpe",
+        "Appalachian Mountains"
+      ],
+      "correct_answer": "Ande",
+      "category": "Geografija"
+    },
+    {
+      "id": "24",
+      "text": "Koji je najveći okean na svetu?",
+      "options": [
+        "Atlantski okean",
+        "Tihi okean",
+        "Indijski okean",
+        "Arktički okean"
+      ],
+      "correct_answer": "Tihi okean",
+      "category": "Geografija"
+    },
+    {
+      "id": "25",
+      "text": "Koji je glavni grad Japana?",
+      "options": [
+        "Osaka",
+        "Kyoto",
+        "Tokyo",
+        "Hiroshima"
+      ],
+      "correct_answer": "Tokyo",
+      "category": "Geografija"
+    },
+    {
+      "id": "26",
+      "text": "Koja država ima najviše jezera na svetu?",
+      "options": [
+        "Sjedinjene Američke Države",
+        "Kanada",
+        "Rusija",
+        "Brazil"
+      ],
+      "correct_answer": "Kanada",
+      "category": "Geografija"
+    },
+    {
+      "id": "27",
+      "text": "Koji je simbol za element vodonik?",
+      "options": [
+        "H",
+        "O",
+        "C",
+        "N"
+      ],
+      "correct_answer": "H",
+      "category": "Hemija"
+    },
+    {
+      "id": "28",
+      "text": "Koja je hemijska formula za metan?",
+      "options": [
+        "CH4",
+        "C2H6",
+        "CO2",
+        "C6H12O6"
+      ],
+      "correct_answer": "CH4",
+      "category": "Hemija"
+    },
+    {
+      "id": "29",
+      "text": "Koji je najpoznatiji plin u atmosferi?",
+      "options": [
+        "Kisik",
+        "Azot",
+        "Ugljen-dioksid",
+        "Helijum"
+      ],
+      "correct_answer": "Azot",
+      "category": "Hemija"
+    },
+    {
+      "id": "30",
+      "text": "Koja je jedinica za meru količine supstance?",
+      "options": [
+        "Mol",
+        "Gram",
+        "Kilogram",
+        "Litara"
+      ],
+      "correct_answer": "Mol",
+      "category": "Hemija"
+    },
+    {
+      "id": "31",
+      "text": "Koja je jedinica za snagu u SI sistemu?",
+      "options": [
+        "Joul",
+        "Vata",
+        "Newton",
+        "Tesla"
+      ],
+      "correct_answer": "Vata",
+      "category": "Fizika"
+    },
+    {
+      "id": "32",
+      "text": "Koji je osnovni zakon dinamike?",
+      "options": [
+        "Newtonov zakon",
+        "Zakon o očuvanju energije",
+        "Zakon o gravitaciji",
+        "Zakon o termodinamici"
+      ],
+      "correct_answer": "Newtonov zakon",
+      "category": "Fizika"
+    },
+    {
+      "id": "33",
+      "text": "Koja je jedinica za brzinu u SI sistemu?",
+      "options": [
+        "m/s",
+        "km/h",
+        "m/s^2",
+        "N"
+      ],
+      "correct_answer": "m/s",
+      "category": "Fizika"
+    },
+    {
+      "id": "34",
+      "text": "Koja vrsta talasa je svetlost?",
+      "options": [
+        "Mehanički talas",
+        "Elektromagnetski talas",
+        "Zvučni talas",
+        "Talas na vodi"
+      ],
+      "correct_answer": "Elektromagnetski talas",
+      "category": "Fizika"
+    },
+    {
+      "id": "35",
+      "text": "Koji organ u ljudskom telu proizvodi insulin?",
+      "options": [
+        "Jetra",
+        "Pluća",
+        "Bubrezi",
+        "Gušterača"
+      ],
+      "correct_answer": "Gušterača",
+      "category": "Biologija"
+    },
+    {
+      "id": "36",
+      "text": "Koji je glavni izvor energije za biljke?",
+      "options": [
+        "Voda",
+        "Sunčeva svetlost",
+        "Zemlja",
+        "Kiseonik"
+      ],
+      "correct_answer": "Sunčeva svetlost",
+      "category": "Biologija"
+    },
+    {
+      "id": "37",
+      "text": "Koji je najveći organ u ljudskom telu?",
+      "options": [
+        "Mozak",
+        "Koža",
+        "Pluća",
+        "Srce"
+      ],
+      "correct_answer": "Koža",
+      "category": "Biologija"
+    },
+    {
+      "id": "38",
+      "text": "Koja vrsta ćelija transportuje kiseonik u ljudskom telu?",
+      "options": [
+        "Crvene krvne ćelije",
+        "Belo krvne ćelije",
+        "Mišićne ćelije",
+        "Neuronske ćelije"
+      ],
+      "correct_answer": "Crvene krvne ćelije",
+      "category": "Biologija"
+    },
+    {
+      "id": "39",
+      "text": "Ko je napisao roman 'Zločin i kazna'?",
+      "options": [
+        "Lev Tolstoji",
+        "Anton Čehov",
+        "Fjodor Dostojevski",
+        "Vladimir Nabokov"
+      ],
+      "correct_answer": "Fjodor Dostojevski",
+      "category": "Književnost"
+    },
+    {
+      "id": "40",
+      "text": "Koji roman je napisao George Orwell?",
+      "options": [
+        "1984",
+        "Brave New World",
+        "Fahrenheit 451",
+        "Lord of the Flies"
+      ],
+      "correct_answer": "1984",
+      "category": "Književnost"
+    },
+    {
+      "id": "41",
+      "text": "Koji pisac je napisao trilogiju 'Gospodar prstenova'?",
+      "options": [
+        "J.R.R. Tolkien",
+        "C.S. Lewis",
+        "J.K. Rowling",
+        "George R.R. Martin"
+      ],
+      "correct_answer": "J.R.R. Tolkien",
+      "category": "Književnost"
+    },
+    {
+      "id": "42",
+      "text": "Ko je autor romana 'Na Drini ćuprija'?",
+      "options": [
+        "Ivo Andrić",
+        "Danilo Kiš",
+        "Miroslav Krleža",
+        "Meša Selimović"
+      ],
+      "correct_answer": "Ivo Andrić",
+      "category": "Književnost"
+    },
+    {
+      "id": "43",
+      "text": "Koji je najpoznatiji pesnik romantizma iz Engleske?",
+      "options": [
+        "William Blake",
+        "Percy Bysshe Shelley",
+        "Samuel Taylor Coleridge",
+        "Lord Byron"
+      ],
+      "correct_answer": "Lord Byron",
+      "category": "Književnost"
+    },
+    {
+      "id": "44",
+      "text": "Ko je autor romana 'Mali princ'?",
+      "options": [
+        "Antoine de Saint-Exupéry",
+        "Victor Hugo",
+        "Ernest Hemingway",
+        "Albert Camus"
+      ],
+      "correct_answer": "Antoine de Saint-Exupéry",
+      "category": "Književnost"
+    },
+    {
+      "id": "45",
+      "text": "Bezveze pitanje za testing'?",
+      "options": [
+        "1",
+        "4",
+        "23",
+        "44"
+      ],
+      "correct_answer": "44",
+      "category": "Bezveze"
+    },
+    {
+      "id": "46",
+      "text": "Bezveze pitanje za tessssssst 2?",
+      "options": [
+        "11",
+        "422",
+        "23",
+        "44"
+      ],
+      "correct_answer": "422",
+      "category": "Bezveze"
+    }
+  ],
+  "scoreBoard": [
+    {
+      "id": "3ca8",
+      "category": "Geografija",
+      "username": "tina",
+      "score": 0,
+      "timeTaken": 2
+    },
+    {
+      "id": "c15e",
+      "category": "Bezveze",
+      "username": "novi",
+      "score": 1,
+      "timeTaken": 3
+    },
+    {
+      "id": "8e2b",
+      "category": "Bezveze",
+      "username": "ca",
+      "score": 1,
+      "timeTaken": 1
+    },
+    {
+      "id": "f457",
+      "category": "Bezveze",
+      "username": "caooo",
+      "score": 1,
+      "timeTaken": 2
+    },
+    {
+      "id": "2de3",
+      "category": "Bezveze",
+      "username": "TIna",
+      "score": 0,
+      "timeTaken": 2
+    },
+    {
+      "id": "d397",
+      "category": "Bezveze",
+      "username": "TIna",
+      "score": 1,
+      "timeTaken": 2
+    },
+    {
+      "id": "ee96",
+      "category": "Bezveze",
+      "username": "c",
+      "score": 1,
+      "timeTaken": 6
+    },
+    {
+      "id": "3fd5",
+      "category": "Bezveze",
+      "username": "c",
+      "score": 1,
+      "timeTaken": 2
+    },
+    {
+      "id": "2f3b",
+      "category": "Geografija",
+      "username": "Tina",
+      "score": 5,
+      "timeTaken": 24
+    },
+    {
+      "id": "2f7a",
+      "category": "Geografija",
+      "username": "Tina",
+      "score": 3,
+      "timeTaken": 3
+    },
+    {
+      "id": "8306",
+      "category": "Geografija",
+      "username": "fdddddds",
+      "score": 3,
+      "timeTaken": 5
+    },
+    {
+      "id": "9cc1",
+      "category": "Bezveze",
+      "username": "Darko",
+      "score": 1,
+      "timeTaken": 1
+    },
+    {
+      "id": "69cd",
+      "category": "Bezveze",
+      "username": "Darko",
+      "score": 0,
+      "timeTaken": 2
+    },
+    {
+      "id": "a0e0",
+      "category": "Geografija",
+      "username": "Darko",
+      "score": 3,
+      "timeTaken": 5
+    },
+    {
+      "id": "08af",
+      "category": "Geografija",
+      "username": "Darko",
+      "score": 3,
+      "timeTaken": 7
+    },
+    {
+      "id": "7e59",
+      "category": "Geografija",
+      "username": "Darko",
+      "score": 3,
+      "timeTaken": 7
+    },
+    {
+      "id": "dd2f",
+      "category": "Geografija",
+      "username": "Darko",
+      "score": 0,
+      "timeTaken": 24
+    },
+    {
+      "id": "34c0",
+      "category": "Geografija",
+      "username": "Darko",
+      "score": 3,
+      "timeTaken": 6
+    },
+    {
+      "id": "1c80",
+      "category": "Geografija",
+      "username": "novi",
+      "score": 3,
+      "timeTaken": 6
+    },
+    {
+      "id": "705d",
+      "category": "Fizika",
+      "username": "Tina",
+      "score": 6,
+      "timeTaken": 22
+    },
+    {
+      "id": "79f4",
+      "category": "Mesano",
+      "username": "Proba",
+      "score": 4,
+      "timeTaken": 22
+    },
+    {
+      "id": "0dfd",
+      "category": "Mesano",
+      "username": "Tina",
+      "score": 3,
+      "timeTaken": 14
+    },
+    {
+      "id": "7102",
+      "category": "Mesano",
+      "username": "dfvgd",
+      "score": 6,
+      "timeTaken": 7
+    },
+    {
+      "id": "f056",
+      "category": "Mesano",
+      "username": "fe",
+      "score": 4,
+      "timeTaken": 10
+    },
+    {
+      "id": "a448",
+      "category": "Mesano",
+      "username": "Tina2",
+      "score": 5,
+      "timeTaken": 11
+    },
+    {
+      "id": "956b",
+      "category": "Mesano",
+      "username": "vxbfxxxxxx",
+      "score": 5,
+      "timeTaken": 11
+    },
+    {
+      "id": "7a53",
+      "category": "Mesano",
+      "username": "vxbfxxxxxx",
+      "score": 4,
+      "timeTaken": 8
+    },
+    {
+      "id": "b9d8",
+      "category": "Mesano",
+      "username": "User Neki tamo",
+      "score": 5,
+      "timeTaken": 8
+    },
+    {
+      "id": "fc73",
+      "category": "Mesano",
+      "username": "vsdvds",
+      "score": 5,
+      "timeTaken": 78
+    },
+    {
+      "id": "9007",
+      "category": "Geografija",
+      "username": "Kokaaaa97",
+      "score": 6,
+      "timeTaken": 74
+    },
+    {
+      "id": "2acf",
+      "category": "Bezveze",
+      "username": "dfdgdg",
+      "score": 1,
+      "timeTaken": 6
+    },
+    {
+      "id": "88f3",
+      "category": "Bezveze",
+      "username": "dfdgdg",
+      "score": 1,
+      "timeTaken": 8
+    },
+    {
+      "id": "dc5c",
+      "category": "Bezveze",
+      "username": "www",
+      "score": 0,
+      "timeTaken": 5
+    },
+    {
+      "id": "09b1",
+      "category": "Bezveze",
+      "username": "111",
+      "score": 2,
+      "timeTaken": 2
+    },
+    {
+      "id": "fa99",
+      "category": "Bezveze",
+      "username": "222",
+      "score": 2,
+      "timeTaken": 8
+    },
+    {
+      "id": "ca94",
+      "category": "Bezveze",
+      "username": "333",
+      "score": 2,
+      "timeTaken": 2
+    },
+    {
+      "id": "ac73",
+      "category": "Književnost",
+      "username": "Pera",
+      "score": 5,
+      "timeTaken": 26
+    },
+    {
+      "id": "3390",
+      "category": "Književnost",
+      "username": "Pera",
+      "score": 2,
+      "timeTaken": 42
+    },
+    {
+      "id": "d7df",
+      "category": "Književnost",
+      "username": "eff",
+      "score": 4,
+      "timeTaken": 23
+    },
+    {
+      "id": "98f6",
+      "category": "Mesano",
+      "username": "Nvi",
+      "score": 2,
+      "timeTaken": 14
+    },
+    {
+      "id": "99ae",
+      "category": "Mesano",
+      "username": "Nvi",
+      "score": 4,
+      "timeTaken": 6
+    },
+    {
+      "id": "a6b1",
+      "category": "Mesano",
+      "username": "Nvi",
+      "score": 1,
+      "timeTaken": 6
+    },
+    {
+      "id": "d70f",
+      "category": "Mesano",
+      "username": "Nvi",
+      "score": 1,
+      "timeTaken": 6
+    },
+    {
+      "id": "07ef",
+      "category": "Biologija",
+      "username": "Tina tina ",
+      "score": 5,
+      "timeTaken": 12
+    },
+    {
+      "id": "8390",
+      "category": "Hemija",
+      "username": "bf",
+      "score": 1,
+      "timeTaken": 8
+    },
+    {
+      "id": "bf05",
+      "category": "Hemija",
+      "username": "bfdxbf",
+      "score": 3,
+      "timeTaken": 5
+    },
+    {
+      "id": "23f9",
+      "category": "Biologija",
+      "username": "bdggfd",
+      "score": 0,
+      "timeTaken": 3
+    },
+    {
+      "id": "3c09",
+      "category": "Fizika",
+      "username": "Tina",
+      "score": 7,
+      "timeTaken": 23
+    },
+    {
+      "id": "faf1",
+      "category": "Vehicles",
+      "username": "Yfr",
+      "score": 1,
+      "timeTaken": 7
+    },
+    {
+      "id": "8cef",
+      "category": "Vehicles",
+      "username": "Yfr",
+      "score": 0,
+      "timeTaken": 9
+    },
+    {
+      "id": "30a0",
+      "category": "Vehicles",
+      "username": "Tina",
+      "score": 0,
+      "timeTaken": 16
+    },
+    {
+      "id": "865f",
+      "category": "Vehicles",
+      "username": "bdb",
+      "score": 0,
+      "timeTaken": 14
+    },
+    {
+      "id": "a845",
+      "category": "Vehicles",
+      "username": "vddvd",
+      "score": 0,
+      "timeTaken": 6
+    },
+    {
+      "id": "3534",
+      "category": "Vehicles",
+      "username": "vddvd",
+      "score": 0,
+      "timeTaken": 3
+    },
+    {
+      "id": "e418",
+      "category": "Entertainment: Japanese Anime & Manga",
+      "username": "Boedsij",
+      "score": 0,
+      "timeTaken": 9
+    },
+    {
+      "id": "0c74",
+      "category": "Entertainment: Japanese Anime & Manga",
+      "username": "vsvs",
+      "score": 1,
+      "timeTaken": 16
+    },
+    {
+      "id": "b69f",
+      "category": "Entertainment: Japanese Anime & Manga",
+      "username": "gsr",
+      "score": 0,
+      "timeTaken": 13
+    },
+    {
+      "id": "1ead",
+      "category": "Science: Computers",
+      "username": "bsxbf",
+      "score": 0,
+      "timeTaken": 9
+    },
+    {
+      "id": "4d3d",
+      "category": "Science: Computers",
+      "username": "Tina",
+      "score": 0,
+      "timeTaken": 28
+    }
+  ]
+}
