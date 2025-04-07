@@ -7,7 +7,7 @@ This is a frontend-only web application that allows users to participate in quiz
 - Styling: **Tailwind CSS** v4.0.14
 - Development Server: **Vite** v6.2.0
 - Fake API: **JSON Server** v1.0.0-beta.3
-- External API: Open Trivia Database API
+- External API: **Open Trivia Database API**
 
 ## Startup commands
 1. Install dependencies
