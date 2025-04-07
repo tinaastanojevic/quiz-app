@@ -1,12 +1,42 @@
-# React + Vite
+# Quiz application
+This is a frontend-only web application that allows users to participate in quizzes. Users can enter their username and choose a category to start the quiz. Once the quiz is completed, the application displays a scoreboard showing the user's results.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies Used
 
-Currently, two official plugins are available:
+- Frontend: **React** v19.0.0
+- Styling: **Tailwind CSS** v4.0.14
+- Development Server: **Vite** v6.2.0
+- Fake API: **JSON Server** v1.0.0-beta.3
+- External API: Open Trivia Database API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Startup commands
+1. Install dependencies
+   
+   Before running the project, install all required dependencies. For this, you will need to have **Node.js** installed on your machine (recommended version: 18.x.x or later). This project was developed using **Node.js** v20.18.2.
+    ```
+    # Install dependencies
+    npm install
+    ```
+2. Start Development Server
 
-## Expanding the ESLint configuration
+   To start the Vite development server for this application, use the following command:
+   ```
+   npm run dev
+   ```
+3. Run JSON Server
+   
+   Add the following script to the scripts section of your package.json file:
+   ```
+   "scripts": {
+   "server": "npx json-server --watch data/data.json --port 8000"
+   }
+   ```
+   Then, run the JSON server by executing:
+   ```
+   npm run server
+   ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ 
+
+
+    
