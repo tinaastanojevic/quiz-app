@@ -8,35 +8,46 @@ function Question() {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [score, setScore] = useState(0);
     const [timer, setTimer] = useState(0);
-    const [isFinished, setIsFinished] = useState(false);
-    const [showNext, setShowNext] = useState(false);
-    const [correctAnswer, setCorrectAnswer] = useState(null);
-    const [wrongAnswer, setWrongAnswer] = useState(null);
-    const [isWritten, setIsWritten] = useState(false);
-    const [showFinishQuiz, setShowFinishQuiz] = useState(false);
-    const [disableButtons, setDisableButtons] = useState(false);
     const [categoryName, setCategoryName] = useState('');
+    const [questionAnswer, setQuestionAnswer] = useState({
+        correctAnswer: null,
+        wrongAnswer: null
+    })
+    
+    const [flags, setFlags] = useState({
+        isFinished: false,
+        isWritten: false
+    })
+    const [buttonState, setButtonState] = useState({
+        showNextButton: false,
+        showFinishButton: false,
+        disableButtons: false
+    })
 
     const params = useParams();
     const location = useLocation();
     const { username } = location.state.username;
 
     useEffect(() => {
-        if (isFinished) {
-            saveResult();
-            return;
-        }
+
         const intervalId = setInterval(() => {
-            if (!showNext && !showFinishQuiz)
+            if (!buttonState.showNextButton && !buttonState.showFinishButton)
                 setTimer(prevTime => prevTime + 1);
         }, 1000);
         return () => clearInterval(intervalId);
-    }, [isFinished, showNext, showFinishQuiz])
+    }, [buttonState.showNextButton, buttonState.showFinishButton])
+
+    useEffect(() => {
+        if (flags.isFinished) {
+            saveResult();
+        }
+    }, [flags.isFinished])
+
 
 
     useEffect(() => {
         const getQuestions = async () => {
-            const data = await fetchQuestions(10, params.category);
+            const data = await fetchQuestions(2, params.category);
             if (!data || !Array.isArray(data)) {
                 console.error("Invalid API response:", data);
                 setListOfQuestions([]);
@@ -63,19 +74,15 @@ function Question() {
     function handleAnswer(option, index) {
         const currentQuestion = listOfQuestions[currentQuestionIndex];
         if (currentQuestion.correctAnswer === option) {
-            setCorrectAnswer(index);
-            setWrongAnswer(null);
+            setQuestionAnswer({ correctAnswer: index, wrongAnswer: null });
             setScore((currentScore) => currentScore + 1);
         }
         else {
-            setWrongAnswer(index);
-            setCorrectAnswer(currentQuestion.shuffledAnswers.indexOf(currentQuestion.correctAnswer));
+            setQuestionAnswer({ correctAnswer: currentQuestion.shuffledAnswers.indexOf(currentQuestion.correctAnswer), wrongAnswer: index })
         }
-        setShowNext(true);
-        setDisableButtons(true);
+        setButtonState({ ...buttonState, showNextButton: true, disableButtons: true })
         if (currentQuestionIndex >= listOfQuestions.length - 1) {
-            setShowFinishQuiz(true);
-            setShowNext(false);
+            setButtonState({ ...buttonState, showNextButton: false, showFinishButton: true })
         }
     }
 
@@ -87,24 +94,22 @@ function Question() {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(newResult)
         }).then(() => {
-            setIsWritten(true);
+            setFlags({ ...flags, isWritten: true });
         })
     }
 
     function nextQuestion() {
-        setShowNext(false);
-        setWrongAnswer(null);
-        setCorrectAnswer(null);
-        setDisableButtons(false);
+        setButtonState({ ...buttonState, showNextButton: false, disableButtons: false });
+        setQuestionAnswer({ correctAnswer: null, wrongAnswer: null })
         setCurrentQuestionIndex((currentIndex) => currentIndex + 1);
     }
     function seeResults() {
-        setIsFinished(true);
+        setFlags({ ...flags, isFinished: true });
     }
 
     return (
         <>
-            {!isFinished ? (
+            {!flags.isFinished ? (
                 listOfQuestions.length > 0 && listOfQuestions[currentQuestionIndex] && (
                     <div key={listOfQuestions[currentQuestionIndex].id} className='flex flex-col p-5 m-5 bg-gray-300 rounded-xl shadow-xl min-w-[350px] sm:min-w-[800px] '>
                         <div className='flex flex-col items-start'>
@@ -117,22 +122,22 @@ function Question() {
                         <div className='flex flex-col justify-center m-2 p-2'>
                             {
                                 listOfQuestions[currentQuestionIndex].shuffledAnswers.map((answer, index) => (
-                                    <button disabled={disableButtons} onClick={() => handleAnswer(answer, index)} key={index}
-                                        className={` ${correctAnswer === index ? "bg-green-800 hover:bg-green-700" : "bg-blue-800 hover:bg-blue-700"} ${wrongAnswer === index ? "bg-red-800 hover:bg-red-700" : "bg-blue-800 hover:bg-blue-700"} text-white shadow-2xl cursor-pointer p-2.5 rounded-sm m-1.5 text-2xl `}>
+                                    <button disabled={buttonState.disableButtons} onClick={() => handleAnswer(answer, index)} key={index}
+                                        className={` ${questionAnswer.correctAnswer === index ? "bg-green-800 hover:bg-green-700" : "bg-blue-800 hover:bg-blue-700"} ${questionAnswer.wrongAnswer === index ? "bg-red-800 hover:bg-red-700" : "bg-blue-800 hover:bg-blue-700"} text-white shadow-2xl cursor-pointer p-2.5 rounded-sm m-1.5 text-2xl `}>
                                         {answer}
                                     </button>
                                 ))
                             }
                         </div>
-                        {showNext && (
+                        {buttonState.showNextButton && (
                             <button className='bg-gray-600 text-xl text-white ml-auto p-2 m-2 hover:bg-gray-500 cursor-pointer rounded-sm' onClick={nextQuestion}>Next question</button>
                         )}
-                        {showFinishQuiz &&
+                        {buttonState.showFinishButton &&
                             <button className='bg-gray-600 text-xl text-white ml-auto p-2 m-2 hover:bg-gray-500 cursor-pointer rounded-sm' onClick={seeResults}>Finish quiz</button>
                         }
                     </div>
                 ))
-                : isWritten && (
+                : flags.isWritten && (
                     <ScoreBoard category={categoryName} username={username} timeTaken={timer} score={score} numOfQuestions={listOfQuestions.length} />
                 )}
         </>
